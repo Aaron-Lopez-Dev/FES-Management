@@ -1,27 +1,59 @@
 *{
-    text-align: center;
     margin: 0;
     scroll-behavior: smooth;
 }
 
-ol a{
+a{
     list-style-type: none;
     text-decoration: none;
+    color: white;
+    margin-right: 10px;
 }
 
 #navbar{
-    height: 60px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    align-content: center;
-    justify-content: center;
+    width: 100vw;
     z-index: 999;
+    position: fixed;
+    height: 60px;
+    border-radius: 0 0 3px 3px;
+    
+    justify-content: center;
+    display: inline-flex;
 }
 
+.navContent{
+    display: inline-flex;
+    position: fixed;
+    width: 90%;
+    height: 60px;
+
+    max-width: 1200px;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks{
+    justify-content: right;
+
+    height: fit-content;
+    width: fit-content;
+}
+.navLogo{
+    width: 50px;
+    height: 50px;
+    justify-content: left;
+    margin-left: 10px;
+
+}
+
+.navImage{
+    width: 100%;
+    height: 100%;
+}
 
 #navbar.scrolled {
-    background-color: rgba(48, 63, 47);
+    background-color: rgba(48 63 47);
   }
 
 li{
@@ -29,7 +61,7 @@ li{
     text-decoration: none;
     display: inline;
     color: white;
-    padding: 0 50px;
+    border: 2px solid black;
 }
 
 .hero{
@@ -49,11 +81,10 @@ li{
     height: 100%;
     width: 90%;
     max-width: 1300px;
-
     align-content: center;
     justify-content: center;
 
-    border: 2px solid black;
+
 }
 
 h1{
@@ -64,9 +95,6 @@ h1{
     text-align: center;
     width: fit-content;
     margin: 50px auto;
-
-
-    border: 2px solid black;
 }
 
 p{
@@ -78,10 +106,13 @@ p{
 }
 
 .contact_buttons{
+    margin: auto;
+
     width:50%;
-    height: 50px;
+    height: fit-content;
     text-align: left;
     margin-top: 50px;
+    text-align: center;
 }
 
 /* SERVICES SECTION*/
@@ -167,10 +198,14 @@ p{
     height: 99%;
     width: 30%;
     margin: 0 40px;
-    border-radius: 20px;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+.logo{
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
 }
 
 .promo{
@@ -183,8 +218,8 @@ p{
 .call_button, .email_button{
     text-decoration: none;
     color: white;
-    border: 1px solid rgba(48, 63, 47);
-    background-color: rgba(48, 63, 47);
+    border: 1px solid rgba(0, 123, 167);
+    background-color: rgba(0, 123, 167);
     padding: 10px 60px;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -205,6 +240,7 @@ h4{
     max-width: 700px;
     margin: auto;
 }
+
 
 @media (min-width: 800px) and (max-width: 1287px){
     li{
