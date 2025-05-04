@@ -108,11 +108,13 @@ p{
 .contact_buttons{
     margin: auto;
 
-    width:50%;
+    width: 100%;
     height: fit-content;
     text-align: left;
     margin-top: 50px;
     text-align: center;
+
+
 }
 
 /* SERVICES SECTION*/
