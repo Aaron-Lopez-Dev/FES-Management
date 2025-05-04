@@ -35,7 +35,6 @@ a{
 
 .navLinks{
     justify-content: right;
-
     height: fit-content;
     width: fit-content;
 }
@@ -44,7 +43,6 @@ a{
     height: 50px;
     justify-content: left;
     margin-left: 10px;
-
 }
 
 .navImage{
@@ -74,7 +72,6 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .contentBox{
@@ -83,8 +80,6 @@ li{
     max-width: 1300px;
     align-content: center;
     justify-content: center;
-
-
 }
 
 h1{
@@ -102,41 +97,30 @@ p{
     margin: auto;
     font-size: 20px;
     color: rgba(248, 250, 241, 50);
-    margin-bottom: 10px;
+ 
 }
 
 .contact_buttons{
     margin: auto;
-
     width: 100%;
     height: fit-content;
     text-align: left;
     margin-top: 50px;
     text-align: center;
-
-
 }
 
 /* SERVICES SECTION*/
-.services, .servicestwo{
+.services{
     width: 100%;
     height: 100vh;
-    
     position: relative;
     top: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: rgba(248, 250, 241);
-}
-
-.serviceHeading{
-   
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 30px;
+    overflow-y: auto;
 }
 
 
@@ -172,14 +156,14 @@ p{
  
 }
 
-
-
-
 /*CONTACT SECTION*/
-.contact, .four{
+
+
+
+.contact, .aboutUs{
     width: 100%;
-    height: 50vh;
-    background-color: rgba(248, 250, 241);
+    height: 54vh;
+    background-color: rgba(48 63 47);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +173,7 @@ p{
 .contactSection{
     width:100%;
     height: 100%;
-    display: inline-flex;
+    display: inline-flex; 
     align-items: center;
     justify-content: center;
 }
@@ -204,17 +188,20 @@ p{
     justify-content: center;
     position: relative;
 }
+
 .logo{
     object-fit: contain;
     height: 90%;
     width: 90%;
 }
 
-.promo{
+.promo, span{
     margin-top: 20px;
-    color: black;
+    color: rgba(248, 250, 241);
+    font-family: "Plus Jakarta Sans", sans-serif;
     text-align: center;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .call_button, .email_button{
@@ -229,18 +216,21 @@ p{
 
 h4{
     font-size: 30px;
+    color: rgba(248, 250, 241);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
 }
 
 .email_button{
     padding: 10px 55px;
 }
+strong{
+    margin-top: 10px;
+}
 
-
-
-
-.accordion{
-    max-width: 700px;
-    margin: auto;
+span{
+    line-height: 1.2;
+    text-align: left;
 }
 
 
@@ -248,16 +238,14 @@ h4{
     li{
         padding: 0 20px;
     }
-
+    h2{
+        top: 70%;
+    }
     .services_container{
         height: 15%;
         width: 75%;
         display: flex;
         margin: 10px auto;
-    }
-
-    h2{
-        top: 70%;
     }
     .contact{
         height: 100vh;
@@ -267,7 +255,6 @@ h4{
         width: 80%;
         display: flex;
     }
-
     .contactSection{
         width:100%;
         height: 100%;
@@ -281,18 +268,10 @@ h4{
   
 }
 
-
 @media screen and (max-width: 800px){
 
     li{
         padding: 0 20px;
-    }
-
-    .services_container{
-        height: 15%;
-        width: 75%;
-        display: flex;
-        margin: 10px auto;
     }
 
     h1{
@@ -302,6 +281,16 @@ h4{
     h2{
         top: 70%;
     }
+    p{
+        font-size: 18px;
+    }
+
+    .services_container{
+        height: 15%;
+        width: 75%;
+        display: flex;
+        margin: 10px auto;
+    }
     .contact{
         height: 100vh;
     }
@@ -309,35 +298,17 @@ h4{
         height: 40%;
         width: 80%;
         display: flex;
-
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-
     .contactSection{
         width:100%;
         height: 100%;
-        
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-
-
-    p{
-        font-size: 18px;
-    }
-
-    .contactSection{
-        width:100%;
-        height: 100%;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
 }
