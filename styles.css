@@ -1,8 +1,11 @@
 *{
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+
+/* Navbar */
 a{
     list-style-type: none;
     text-decoration: none;
@@ -16,38 +19,45 @@ a{
     position: fixed;
     height: 60px;
     border-radius: 0 0 3px 3px;
-    
     justify-content: center;
     display: inline-flex;
 }
 
 .navContent{
-    display: inline-flex;
-    position: fixed;
+    display: flex;
+    position: relative;
     width: 90%;
     height: 60px;
-
     max-width: 1200px;
     top: 0;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navLinks{
-    justify-content: right;
+    align-items: right !important;
     height: fit-content;
     width: fit-content;
+
 }
 .navLogo{
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    display: inline-flex;
+    height: 60px;
     justify-content: left;
     margin-left: 10px;
+    align-items: center;
+}
+
+.name{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    color: rgb(248, 250, 241);
 }
 
 .navImage{
-    width: 100%;
-    height: 100%;
+    width: 55px;
+    height: 55px;
 }
 
 #navbar.scrolled {
@@ -58,10 +68,12 @@ li{
     text-align: center;
     text-decoration: none;
     display: inline;
-    color: white;
+    color: rgb(248, 250, 241);
+    font-weight: 600;
     border: 2px solid black;
 }
 
+/* Hero Section */
 .hero{
     height: 95vh;
     background-image: url("assets/hero_bg.jpg");
@@ -72,9 +84,10 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.contentBox{
+.contentBox, .serviceContentBox{
     height: 100%;
     width: 90%;
     max-width: 1300px;
@@ -96,8 +109,7 @@ p{
     text-align: center;
     margin: auto;
     font-size: 20px;
-    color: rgba(248, 250, 241, 50);
- 
+    color: rgb(248, 250, 241);
 }
 
 .contact_buttons{
@@ -109,6 +121,68 @@ p{
     text-align: center;
 }
 
+/* HERO-ABOUT US Divider CSS */
+.custom-shape-divider-bottom-1746406815 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1746406815 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-bottom-1746406815 .shape-fill {
+    fill: rgba(48 63 47);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1746404555 svg {
+        width: calc(253% + 1.3px);
+        height: 43px;
+    }
+}
+/* About Us Section */
+
+.aboutUsDescription{
+    margin: auto;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+/* ABOUT US-SERVICES DIVIDER CSS */
+.custom-shape-divider-bottom-1746406705 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1746406705 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-bottom-1746406705 .shape-fill {
+    fill: rgba(248, 250, 241);
+}
 /* SERVICES SECTION*/
 .services{
     width: 100%;
@@ -120,9 +194,12 @@ p{
     justify-content: center;
     flex-direction: column;
     background-color: rgba(248, 250, 241);
-    overflow-y: auto;
+    position: relative;
 }
 
+.serviceContentBox{
+    overflow-y: auto;
+}
 
 .services_container{
     display: inline-flex;
@@ -138,6 +215,7 @@ p{
 
 .servicephotos{
     opacity: .7;
+    
 }
 
 .servicephotos:hover{
@@ -157,17 +235,37 @@ p{
 }
 
 /*CONTACT SECTION*/
+/* 
+SERVICES TO CONTACT DIVIDER */
 
+.custom-shape-divider-top-1746406472 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1746406472 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-top-1746406472 .shape-fill {
+    fill: rgba(248, 250, 241);
+}
 
 .contact, .aboutUs{
     width: 100%;
-    height: 54vh;
+    height: 80vh;
     background-color: rgba(48 63 47);
     display: flex;
     align-items: center;
     justify-content: center;
-    scroll-margin-top: 40px;
+    position: relative;
 }
 
 .contactSection{
@@ -195,7 +293,7 @@ p{
     width: 90%;
 }
 
-.promo, span{
+.promo{
     margin-top: 20px;
     color: rgba(248, 250, 241);
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -216,9 +314,10 @@ p{
 
 h4{
     font-size: 30px;
+    text-align: center;
     color: rgba(248, 250, 241);
     font-family: "Plus Jakarta Sans", sans-serif;
-    margin: 0;
+    margin: 50px 0;
 }
 
 .email_button{
@@ -273,11 +372,9 @@ span{
     li{
         padding: 0 20px;
     }
-
     h1{
         font-size: 48px !important;
     }
-
     h2{
         top: 70%;
     }
@@ -311,4 +408,8 @@ span{
         flex-direction: column;
     }
 
+    .contact{
+        padding-top: 50px;
+        height: 100vh;  
+    }
 }
