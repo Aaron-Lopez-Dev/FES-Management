@@ -476,12 +476,12 @@ strong{
         height: 43px;
     }
     .aboutUsHeading{
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 7%;
     }
     .aboutUsDescription{
         margin: auto;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.7;
         opacity: .8;
     }
