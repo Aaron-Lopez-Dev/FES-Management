@@ -101,7 +101,7 @@ li{
 h1{
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 400;
-    font-size: 50px !important;    
+    font-size: 80px;    
     color: var(--secondary-white) !important;
     text-align: center;
     width: fit-content;
@@ -419,7 +419,7 @@ strong{
         padding: 0 20px;
     }
     h1{
-        font-size: 64px !important;
+        font-size: 48px;
     }
    
     p{
@@ -434,7 +434,7 @@ strong{
     }
     .services_container{
         height: 600px;
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-wrap: none;
         margin: 10px auto;
@@ -481,7 +481,7 @@ strong{
     }
     .aboutUsDescription{
         margin: auto;
-        font-size: 28px;
+        font-size: 20px;
         line-height: 1.7;
         opacity: .8;
     }
