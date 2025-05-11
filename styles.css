@@ -430,7 +430,7 @@ strong{
     }
 
     .serviceContentBox{
-        overflow-x: hidden;
+        width: 100%;
     }
     .services_container{
         height: 600px;
