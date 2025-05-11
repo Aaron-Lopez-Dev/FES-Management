@@ -432,6 +432,7 @@ strong{
         height: 600px;
         width: 100%;
         display: flex;
+        flex-wrap: none;
         margin: 10px auto;
     }
     .contact{
