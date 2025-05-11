@@ -9,7 +9,7 @@
     <meta property="og:title" content="Florida Enviornmental Services" />
     <meta property="og:description"  content="Florida's Complete Outdoor Experts"/>
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/logonobg.png"/> 
+    <meta property="og:image" content="assets/favicon.png"/> 
     <meta property="og:image:width"      content="1200" />
     <meta property="og:image:height"     content="630" />
    
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
    
     <link rel="stylesheet" href="styles.css">
-   
+   <link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 </head>
   <body>
         <div class="navbar" id="navbar">
@@ -77,68 +77,169 @@
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
         </div>
-
     </div>
-        
-
     </section>
 
 
-    <section class="services" id="services">
+<section class="services" id="services">
 
-        <div class="serviceContentBox">
+    <div class="serviceContentBox">
+
             <div class="services_container">
-                <img class="servicephotos" src="assets/lawncare.jpg">
-                <h2 class="serviceName">LAWNCARE SERVICES</h2>
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/lawncare.jpg">
+                </div>
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Lawncare Services</h2>
+                </div>
             </div>
+
+
             <div class="services_container">
-                <img class="servicephotos" src="assets/hardscaping.jpg">
-                <h2 class="serviceName">HARDSCAPING</h2>
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/hardscaping.jpg">
+                </div>
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Hardscaping</h2>
+                </div> 
             </div>
+
             <div class="services_container">
-                <img class="servicephotos" src="assets/sprinkler.jpg">
-                <h2 class="serviceName">IRRIGATION</h2>
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/sprinkler.jpg">
+                </div>
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Irrigation</h2>
+                </div>
             </div>
+
             <div class="services_container">
-                <img class="servicephotos" src="assets/tree.jpg">
-                <h2 class="serviceName">TREE TRIMMING</h2>
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/tree.jpg">
+                </div>  
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Tree Trimming</h2>
+                </div>
             </div>
+
             <div class="services_container">
-                <img class="servicephotos" src="assets/gutter.jpg">
-                <h2 class="serviceName">GUTTER CLEANING</h2>
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/gutter.jpg">
+                </div>
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Gutter Cleaning</h2>
+                </div>
             </div>
            
             <div class="services_container">
-                <img class="servicephotos" src="assets/pavers.jpg">
-                <h2 class="serviceName">PAVERS</h2>
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/pavers.jpg">
+                </div>
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Pavers</h2>
+                </div>
             </div>
-            <div class="services_container">
-              <img class="servicephotos" src="assets/pressurewashing.jpg">
-              <h2 class="serviceName">PRESSURE WASHING</h2>
-          </div>
-          <div class="services_container">
-              <img class="servicephotos" src="assets/DRAINAGE.jpg">
-              <h2 class="serviceName">DRAINAGE SERVICES</h2>
-          </div>
-          <div class="services_container">
-              <img class="servicephotos" src="assets/SOD.jpg">
-              <h2 class="serviceName">SOD</h2>
-          </div>
-          <div class="services_container">
-              <img class="servicephotos" src="assets/fencess.jpg">
-              <h2 class="serviceName">FENCES</h2>
-          </div>
-          <div class="services_container">
-              <img class="servicephotos" src="assets/landscapedesign.jpg">
-              <h2 class="serviceName">LANDSCAPE DESIGN</h2>
-          </div>
-          <div class="services_container">
-              <img class="servicephotos" src="assets/CLEANUP.jpg">
-              <h2 class="serviceName">DISASTER CLEANUP</h2>
-          </div>
-        </div>
-    </section>
 
+            <div class="services_container">
+                <div class="serviceImage">
+                    <img class="servicephotos" src="assets/pressurewashing.jpg">
+                </div>
+                <div class="serviceNameContainer">
+                    <h2 class="serviceName">Pressure Washing</h2>
+                </div>
+            </div>
+
+          <div class="services_container">
+            <div class="serviceImage">
+                <img class="servicephotos" src="assets/DRAINAGE.jpg">
+            </div>
+            <div class="serviceNameContainer">
+                <h2 class="serviceName">Drainage Services</h2>
+            </div>
+          </div>
+
+        <div class="services_container">
+            <div class="serviceImage">
+                <img class="servicephotos" src="assets/SOD.jpg">
+            </div>
+            <div class="serviceNameContainer">
+                <h2 class="serviceName">Sod</h2>
+            </div>
+        </div>
+
+
+          <div class="services_container">
+            <div class="serviceImage"> 
+                <img class="servicephotos" src="assets/fencess.jpg">
+            </div>
+             <div class="serviceNameContainer">
+                <h2 class="serviceName">Fences</h2>
+             </div>
+          </div>
+
+          <div class="services_container">
+            <div class="serviceImage">
+                <img class="servicephotos" src="assets/landscapedesign.jpg">
+            </div>
+            <div class="serviceNameContainer">
+                <h2 class="serviceName">Landscape Design</h2>
+            </div>
+          </div>
+
+        <div class="services_container">
+            <div class="serviceImage">
+                <img class="servicephotos" src="assets/CLEANUP.jpg">
+            </div>
+            <div class="serviceNameContainer">
+                <h2 class="serviceName">Disaster Cleanup</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!--  <section class="gallerySection">
+
+        <div class="contentBoxGallery">
+
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="gallery/pavers.jpg"></image>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="#"></image>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="#"></image>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="#"></image>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="#"></image>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="#"></image>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="galleryCard">
+                        <image class="galleryImage" src="#"></image>
+                    </div>
+                </div> -->
+
+        
+    </section>
     
     <section class="contact" id="contact">
           <!--   DIVIDER AT TOP OF CONTACT SECTION -->
@@ -162,9 +263,8 @@
             </div>
         </div>
     </section>
-    
-
    
+  
     <script src="script.js"></script> 
 
   </body>   
