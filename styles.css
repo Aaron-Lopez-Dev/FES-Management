@@ -256,14 +256,17 @@ p{
 /* GALLERY SECTION */
 
 .gallerySection{
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
+    background-color: var(--secondary-white);
 }
 
 .slider-wrapper{
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .slider{
     display: flex;
