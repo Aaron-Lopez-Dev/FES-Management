@@ -498,4 +498,8 @@ strong{
     .spanBold{
         font-size: 18px;
     }
+
+    .slider{
+        aspect-ratio: 4/3;
+    }
 }
