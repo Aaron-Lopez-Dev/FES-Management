@@ -281,6 +281,8 @@ p{
     scroll-snap-align: start;
     object-fit: cover;
 }
+
+
 .slider-nav{
     display: flex;
     column-gap: 1rem;
@@ -498,8 +500,7 @@ strong{
     .spanBold{
         font-size: 18px;
     }
-
-    .slider{
-        aspect-ratio: 4/3;
+    .slider img{
+        object-fit: fill;
     }
 }
