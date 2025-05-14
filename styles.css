@@ -263,25 +263,24 @@ p{
 
 .slider-wrapper{
     position: relative;
-    max-width: 48rem;
+    max-width: 90%;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 .slider{
     display: flex;
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0,0,.75);
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%,0%,0%,0.25);
+    width: 100%;
+    height: 80vh;
 }
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: contain;
 }
-
 
 .slider-nav{
     display: flex;
