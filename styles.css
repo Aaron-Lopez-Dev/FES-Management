@@ -501,6 +501,6 @@ strong{
         font-size: 18px;
     }
     .slider img{
-        object-fit: fill;
+        object-fit: contain;
     }
 }
